@@ -53,27 +53,27 @@ function Header() {
                             </button>
                         </li>
                         <li className='Nav-wrapper-sec-ul-li'>
-                            <NavLink role='link' className='' to='/Collections'>
+                            <NavLink className='' to='/Collections'>
                                 Collections
                             </NavLink>
                         </li>
                         <li className='Nav-wrapper-sec-ul-li'>
-                            <NavLink role='link' className='' to='/Men'>
+                            <NavLink className='' to='/Men'>
                                 Men
                             </NavLink>
                         </li>
                         <li className='Nav-wrapper-sec-ul-li'>
-                            <NavLink role='link' className='' to='/Women'>
+                            <NavLink className='' to='/Women'>
                                 Women
                             </NavLink>
                         </li>
                         <li className='Nav-wrapper-sec-ul-li'>
-                            <NavLink role='link' className='' to='/About'>
+                            <NavLink className='' to='/About'>
                                 About
                             </NavLink>
                         </li>
                         <li className='Nav-wrapper-sec-ul-li'>
-                            <NavLink role='link' className='' to='/Contact'>
+                            <NavLink className='' to='/Contact'>
                                 Contact
                             </NavLink>
                         </li>
