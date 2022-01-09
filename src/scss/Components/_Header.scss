@@ -1,0 +1,242 @@
+.Nav
+{
+    background-color: $primary-color;
+    height:92px;
+    max-height: 92px;
+    min-height: 92px;
+    &-wrapper
+    {
+        border-bottom:1px solid rgba($primary-color-light,.5);
+        &-sec
+        {
+            .ToggleOpenIcon
+            {
+                padding-top: 5px;
+                height: 20px;
+                margin-right: 1rem;
+            }
+            &-brand
+            {
+                line-height: 92px;
+                margin-right: 1.6rem;
+            }
+            &-ul
+            {
+                align-items:center;
+                height:100%;
+                @include media('tab-port')
+                {
+                    position: fixed;
+                    top:0;
+                    left: 0;
+                    flex-direction: column;
+                    height:100vh;
+                    width: 250px;
+                    align-items: flex-start;
+                    background-color: $primary-color;
+                    padding: 2rem;
+                    transform: translateX(-200px);
+                    opacity: 0;
+                    pointer-events: none;
+                    transition:opacity 600ms ease-in-out ,transform 500ms ease-in-out;
+                }
+                &.active
+                {
+                    pointer-events: visible;
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+                .ToggleClose
+                {
+                    margin-bottom: 3rem;
+                }
+                &-li
+                {
+                    margin-left: 1.2rem;
+                    margin-top: .2rem;
+                    height: 100%;
+                    max-height: 100%;
+                    line-height: 92px;
+                    border-bottom:transparent;
+                    transition: border-bottom 300ms ease-in-out;
+                    @include media('tab-port')
+                    {
+                        line-height: 3rem;
+                        margin-left: 0;
+                        height: auto;
+                    }
+                    a
+                    {
+                        font:500 .8rem $primary-font;
+                        color:$primary-color-light;
+                        text-transform: capitalize;
+                        transition: color 300ms ease-in-out;
+                        @include media('tab-port')
+                        {
+                            color:rgba($first-color-additional,.8);
+                            font-weight: 800;
+                        }
+                    }
+                    &:hover
+                    {
+                        border-bottom: 3px solid rgba($secondary-color-light,.8);
+                    }
+                    &:hover a
+                    {
+                        color:rgba($first-color-additional,.8);
+                    }
+                }
+            }
+        }
+        &-ul
+        {
+            &-li
+            {
+                margin-left: 2rem;
+                @include media('tab-port')
+                {
+                    margin-left: 1rem;
+                }
+                &-sec1
+                {
+                    position: relative;
+                    &-quantity
+                    {
+                        color:$primary-color;
+                        background-color: $secondary-color-light;
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        line-height: 20px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -7px;
+                        right: -7px;
+                    }
+                }
+                &-sec2
+                {
+                    position: absolute;
+                    background-color: #fff;
+                    box-shadow: 1px 1px 20px rgba($primary-color-light, 50%);
+                    border-radius: 10px;
+                    top: 100%;
+                    width: 350px;
+                    z-index: 1;
+                    left: 87%;
+                    opacity: 0;
+                    pointer-events: none;
+                    transform: translateX(-65%);
+                    transition: opacity 500ms ease-in-out;
+                    @include media('bigDesktop')
+                    {
+                        left: calc(100% - 300px);
+                        transform: translateX(calc(-100% + 250px));
+                    }
+                    @media only screen and (min-width:1800px) {
+                        transform: translateX(calc(-100% + 10px));
+                    }
+                    @media only screen and (min-width:2267px) {
+                        left:calc(100% - 400px);
+                        transform: translateX(calc(-100% - 100px));
+                    }
+                    @include media('tab-port')
+                    {
+                        top:70px;
+                        left: 50%; 
+                        width: 90vw;
+                        top: 110%;
+                        transform: translateX(-50%);
+                    }
+                    &.active
+                    {
+                        opacity: 1;
+                        pointer-events: visible;
+                    }
+                    h4
+                    {
+                        padding: 1.5rem;
+                        font: 700 .9rem $primary-font;
+                        border-bottom: 1px solid rgba($primary-color-light, .4);
+                    }
+                    &-wrapperCart
+                    {
+                        padding: 1.5rem;
+                        &-sec1
+                        {
+                            margin-bottom: 1.5rem;
+                            img
+                            {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 5px;
+                            }
+                            p
+                            {
+                                text-transform: capitalize;
+                                color: $primary-color-dark;
+                                font:500 1rem $primary-font;
+                                margin-left: .5rem;
+                                margin-bottom: 0;
+                                line-height: 1.25rem;
+                                .TotalPrice
+                                {
+                                    color: $first-color-additional;
+                                    font-weight: 700;
+                                    margin-left: .5rem;
+                                }
+                            }
+                            button
+                            {
+                                width: 20px;
+                                height: 20px;
+                                margin-left: .5rem;
+                                img
+                                {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        &-btnCheck
+                        {
+                            width: 100%;
+                            max-width: 100%;
+                            color:$primary-color;
+                            padding: 1rem;
+                            font: 700 .9rem $primary-font;
+                            text-transform: capitalize;
+                            background-color:$secondary-color-light;
+                            border-radius: 10px;
+                        }
+                    }
+                    &-CartMsg
+                    {
+                        padding: 4rem 3rem;
+                        color: rgba($first-color-additional,.5);
+                        font: 900 .9rem $primary-font;
+                        text-align: center;
+                    }
+                }
+                &.div-img
+                {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: transparent;
+                    cursor: pointer;
+                    transition: border 300ms ease-in-out;
+                    img
+                    {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover
+                    {
+                        border: 3px solid $secondary-color-light;
+                    }
+                }
+            }
+        }
+    }
+}

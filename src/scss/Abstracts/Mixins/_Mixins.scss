@@ -1,0 +1,38 @@
+@mixin media($content)
+{
+    @if($content == 'small-phone')
+    {
+        @media only screen and (max-width:575px)
+        {
+            @content
+        }
+    }
+    @if($content == 'phone')
+    {
+        @media only screen and (max-width:768px)
+        {
+            @content
+        }
+    }
+    @if($content == 'tab-port')
+    {
+        @media only screen and (max-width:990px)
+        {
+            @content
+        }
+    }
+    @if($content =='tab-land')
+    {
+        @media only screen and (max-width:1200px)
+        {
+            @content
+        }
+    }
+    @if($content == 'bigDesktop')
+    {
+        @media only screen and (min-width:1400px)
+        {
+            @content
+        }
+    }
+}

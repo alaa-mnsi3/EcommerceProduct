@@ -1,0 +1,55 @@
+.productSlider
+{
+    position: fixed;
+    background-color: rgba($first-color-additional, .8);
+    width: 100vw;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    &-wrapper
+    {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 2000;
+        width: calc(100%/3.5);
+        transform: translate(-50%,-50%);  
+        &-close
+        {
+            align-self: flex-end;
+            margin-bottom: 1rem;
+            button
+            {
+                color: $secondary-color-light;
+                font:500 2rem $primary-font;
+            }
+        }
+        &-sec
+        {
+            width: calc(100%);
+            .btn-next
+            {
+                left: -20px;
+            }
+            &-img
+            {
+                border-radius: 10px;
+                overflow: hidden;
+                margin-bottom: 2rem;
+            }
+            .btn-prev
+            {
+                right: -20px;
+            }
+        }  
+        .Product-ulThumbnail
+        {
+            .productSlider-wrapper-li
+            {
+                width: 60px;
+                height: 60px;
+            }
+        }   
+    }
+}

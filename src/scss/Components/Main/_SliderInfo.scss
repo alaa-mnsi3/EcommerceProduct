@@ -1,0 +1,86 @@
+.SliderInfo
+{
+    &-topHeader
+    {
+        color: $secondary-color-light;
+        text-transform: uppercase;
+        letter-spacing: .08rem;
+        font: 800 .75rem/2.3rem $primary-font;
+    }
+    &-Header
+    {
+        color:rgba($first-color-additional,.88);
+        font: 900 2rem/2.3rem $primary-font;
+        text-transform: capitalize;
+        margin-bottom: 1.7rem;
+    }
+    &-pragraph
+    {
+        color: $primary-color-dark;
+        font:500 1rem/1.7rem $primary-font;
+        letter-spacing: .05rem;
+        margin-bottom: 1.7rem;
+    }
+    &-NewPrice
+    {
+        margin-bottom: .5rem;
+        span:first-of-type
+        {
+            color:rgba($first-color-additional,.88);
+            font: 600 1.7rem $primary-font;
+            margin-right: 1rem;
+        }
+        span:last-of-type
+        {
+            background-color: rgba($secondary-color,.6);
+            color: rgba($secondary-color-light,.8);
+            padding:.25rem .5rem;
+            font: 600 1.1rem $primary-font;
+            border-radius: 5px;
+        }
+    }
+    &-OldPrice
+    {
+        margin-bottom: 2.5rem;
+        color:$primary-color-light;
+        font: 500 1.1rem $primary-font;
+        text-decoration: line-through;
+    }
+    &-btnsWrapper
+    {
+        &-BouMin
+        {
+            background-color:rgba($primary-color-light,.12);
+            padding:1rem;
+            border-radius: 8px;
+            width: 30%;
+            margin-right: 1rem;
+            span
+            {
+                color: rgba($first-color-additional,.8);
+                font: 600 1rem $primary-font;
+                display: inline-block;
+            }
+        }
+        &-submit
+        {
+            width: calc(100% - 30% - 1rem);
+            background-color:$secondary-color-light;
+            color: $primary-color;
+            border-radius: 8px;
+            font: 600 1rem $primary-font;
+            letter-spacing: .04rem;
+            pointer-events: visible;
+            transition: background-color 300ms ease-in-out;
+            i
+            {
+                margin-right: 1rem;
+            }
+            &.disabled
+            {
+                pointer-events: none;
+                background-color: rgba($secondary-color-light,.6);
+            }
+        }
+    }
+}

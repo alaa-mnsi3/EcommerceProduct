@@ -1,0 +1,54 @@
+$primary-color:#fff;
+$primary-color-light:rgb(181, 182, 184);
+$primary-color-dark:rgb(134, 134, 136);
+
+$secondary-color:rgb(241, 203, 181);
+$secondary-color-dark:rgb(213,107,45);
+$secondary-color-light:rgb(255,125,27);
+
+$first-color-additional:#000;
+
+$primary-font:sans-serif;
+
+:root
+{
+    --primary-color:#fff;
+    --primary-color-light:rgb(181, 182, 184);
+    --primary-color-dark:rgb(134, 134, 136);
+
+    --secondary-color:rgb(241, 203, 181);
+    --secondary-color-dark:rgb(213,107,45);
+    --secondary-color-light:rgb(255,125,27);
+
+    --first-color-additional:#000;
+
+    --primary-font:sans-serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+}
+li
+{
+    list-style-type: none;
+}
+ul,p
+{
+    padding: 0;
+    margin: 0;
+}
+button
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

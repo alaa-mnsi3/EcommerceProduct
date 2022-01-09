@@ -1,0 +1,21 @@
+#ProductShow
+{
+    position:relative;
+}
+.Main
+{
+    margin-top: 92px;
+    padding: 4rem 0;
+    @include media('phone')
+    {
+        padding: 0;
+    }
+    &-wrapper
+    {
+        justify-content: center;
+        @include media('phone')
+        {
+            flex-direction: column;
+        }
+    }
+}
