@@ -37,19 +37,19 @@ function Header() {
                     
                     {/* Toggle button in Mob to appear nav Bar */}
                     <button className='d-flex d-lg-none d-md-flex ToggleOpenIcon' onClick={()=>setOpenNav(true)} title='Toggle'>
-                        <img src={MenuIcon} alt='Menu Icon' className='h-100' role='img'/>
+                        <img src={MenuIcon} alt='Menu Icon' className='h-100'/>
                     </button>
 
                     {/* Brand */}
-                    <Link exact='true' className='Nav-wrapper-sec-brand' to='/'>
-                        <img src={logo} alt="logo" role='img'/>
+                    <Link className='Nav-wrapper-sec-brand' to='/'>
+                        <img src={logo} alt="logo"/>
                     </Link>
 
                     {/* right navbar */}
                     <ul className={OpenNav?'d-flex Nav-wrapper-sec-ul active':'d-flex Nav-wrapper-sec-ul'}>
                         <li className='d-flex d-lg-none d-md-flex ToggleClose'>
                             <button title='ToggleClose' onClick={()=>setOpenNav(false)}>
-                                <img src={closeIcon} role='img' alt="close menu"/>
+                                <img src={closeIcon} alt="close menu"/>
                             </button>
                         </li>
                         <li className='Nav-wrapper-sec-ul-li'>
@@ -86,7 +86,7 @@ function Header() {
                         {/* button open cart */}
                         <button title='cartbtn' onClick={()=>setOpenCart(!OpenCart)} className='Nav-wrapper-ul-li-sec1'>
                             <span className='Nav-wrapper-ul-li-sec1-quantity text-center'>{cartQuantity}</span>
-                            <img src={cartIcon} alt="Cart" role='img'/>
+                            <img src={cartIcon} alt="Cart"/>
                         </button>
 
                         {/* what inside the cart */}
@@ -104,14 +104,14 @@ function Header() {
                                             <div className='Nav-wrapper-ul-li-sec2-wrapperCart d-flex flex-column'>
                                                 <div className='d-flex Nav-wrapper-ul-li-sec2-wrapperCart-sec1 align-items-center'>
                                                     
-                                                    <img src={item.imageSrc} alt='ProductImage' role='img'/>
+                                                    <img src={item.imageSrc} alt='ProductImage'/>
 
                                                     <p>
                                                         {item.cartHeadeing} <span className='TotalPrice'> ${item.Totalprice}.00</span>
                                                     </p>
 
                                                     <button onClick={()=>handleRemove(index)} className='d-flex' title='Delete Icon'>
-                                                        <img className='img-fluid' src={DeleteIcon} alt='Remove Icon' role='img'/>
+                                                        <img className='img-fluid' src={DeleteIcon} alt='Remove Icon'/>
                                                     </button>
 
                                                 </div>
@@ -129,7 +129,7 @@ function Header() {
                         </div>
                     </li>
                     <li className='Nav-wrapper-ul-li div-img'>
-                        <img src={avatar} alt="Avatar" role='img'/>
+                        <img src={avatar} alt="Avatar"/>
                     </li>
                 </ul>
             </div>

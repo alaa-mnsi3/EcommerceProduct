@@ -42,13 +42,13 @@ function SliderProduct({ImagesData,setShow,imageSlider,Show})
                 </div>
                 <div className='productSlider-wrapper-sec position-relative'>
                     <button onClick={slider.previous} className='btn-slider btn-next d-flex justify-content-center align-items-center'>
-                       <img  src={prevIcon} alt='Previous Icon' role='img' className='img-fluid'/>
+                       <img  src={prevIcon} alt='Previous Icon' className='img-fluid'/>
                     </button>
                     <div className='productSlider-wrapper-sec-img w-100'>
-                        <img  src={ProductSlider} alt='Product Image' role='img' className='w-100 img-fluid'/>
+                        <img  src={ProductSlider} alt='Product Image' className='w-100 img-fluid'/>
                     </div>
                     <button onClick={slider.next} className='btn-slider btn-prev d-flex justify-content-center align-items-center'>
-                       <img  src={nextIcon} alt='Next Icon' role='img' className='img-fluid'/>
+                       <img  src={nextIcon} alt='Next Icon' className='img-fluid'/>
                     </button>
                 </div>
                 <ProductThumbnial ImagesData={ImagesData} setSlideNum={setSlideNum} setProductSlider={setProductSlider} slideNum={slideNum} Show={Show} Title1={Title1} setTitle1={setTitle1}/>

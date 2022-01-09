@@ -60,11 +60,11 @@ function SliderInfo() {
             <div className='d-flex SliderInfo-btnsWrapper'>
                 <div className='SliderInfo-btnsWrapper-BouMin d-flex justify-content-around align-items-center'>
                     <button onClick={handleMinus}>
-                        <img role='img' src={minusIcon} alt="miuns Icon" className='img-fluid'/>
+                        <img src={minusIcon} alt="miuns Icon" className='img-fluid'/>
                     </button>
                     <span>{Quantity}</span>
                     <button onClick={()=>setQuantity((prev)=>prev+1)}>
-                        <img role='img' src={plusIcon} alt="miuns Icon" className='img-fluid'/>
+                        <img src={plusIcon} alt="miuns Icon" className='img-fluid'/>
                     </button>
                 </div>
                 <button data-price='125.00' className={Quantity===0?'SliderInfo-btnsWrapper-submit disabled':'SliderInfo-btnsWrapper-submit'} onClick={(e)=>handleCart(e)}>

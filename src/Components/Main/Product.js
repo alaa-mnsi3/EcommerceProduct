@@ -40,7 +40,7 @@ function Product() {
             <div className='col-lg-4 col-md-5 col-12 Product d-flex flex-column justify-content-center'>
                 <div className='Product-wrapper'>
                     <button onClick={slider.previous} className='btn-slider btn-prev d-flex d-sm-flex d-md-none d-lg-none align-items-center justify-content-center'>
-                        <img  src={prevIcon} alt='Previous Icon' role='img' className='img-fluid'/>
+                        <img  src={prevIcon} alt='Previous Icon' className='img-fluid'/>
                     </button>
                     <div onClick={()=>setShow(true)} className='Product-wrapper-ProductImg'>
                         <ReactImageMagnify  {...{
@@ -57,7 +57,7 @@ function Product() {
                         }} />
                     </div>
                     <button onClick={slider.next} className='btn-slider btn-next d-flex d-sm-flex d-md-none d-lg-none align-items-center justify-content-center'>
-                        <img  src={nextIcon} alt='Next Icon' role='img' className='img-fluid'/>
+                        <img  src={nextIcon} alt='Next Icon' className='img-fluid'/>
                     </button>
                 </div>
                 <ProductThumbnial  Title={Title} setTitle={setTitle} Show={Show} ImagesData={ImagesData}/>

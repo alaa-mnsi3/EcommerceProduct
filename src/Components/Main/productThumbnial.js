@@ -30,7 +30,7 @@ function ProductThumbnial({ImagesData,Title,setTitle,setSlideNum,Show,setProduct
             {ImagesData.map((item,index)=>(
                 <li key={index} className={((item.title===Title) || (item.title === Title1)) || (index===slideNum)?'Product-ulThumbnail-LiImage productSlider-wrapper-li active':'Product-ulThumbnail-LiImage productSlider-wrapper-li'}>
                     <button data-image={item.dataImage} title={item.title} onClick={(e)=>SliderProduct(e)}>
-                        <img src={item.src} alt='Product Image' role='img' width='100%' className='img-fluid'/>
+                        <img src={item.src} alt='Product Image' className='img-fluid'/>
                     </button>
                 </li>
             ))}
