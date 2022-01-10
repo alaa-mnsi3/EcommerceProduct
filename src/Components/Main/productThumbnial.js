@@ -26,7 +26,7 @@ function ProductThumbnial({ImagesData,Title,setTitle,setSlideNum,Show,setProduct
     
 
     return (
-        <ul className={Show?'d-flex Product-ulThumbnail':'d-md-flex Product-ulThumbnail d-none d-sm-none justify-content-center'}>
+        <ul className='d-md-flex Product-ulThumbnail d-none d-sm-none justify-content-center'>
             {ImagesData.map((item,index)=>(
                 <li key={index} className={((item.title===Title) || (item.title === Title1)) || (index===slideNum)?'Product-ulThumbnail-LiImage productSlider-wrapper-li active':'Product-ulThumbnail-LiImage productSlider-wrapper-li'}>
                     <button data-image={item.dataImage} title={item.title} onClick={(e)=>SliderProduct(e)}>
